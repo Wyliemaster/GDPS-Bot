@@ -1,0 +1,23 @@
+{
+  "name": "xgdps",
+  "version": "1.0.0",
+  "description": "xgdps bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wylie",
+  "license": "ISC",
+  "dependencies": {
+    "base64-xor": "^0.10.0",
+    "bazinga64": "^5.7.7",
+    "bindings": "^1.5.0",
+    "discord.js": "^12.3.1",
+    "file-uri-to-path": "^2.0.0",
+    "fs": "0.0.1-security",
+    "import-locals": "^2.0.0",
+    "nan": "^2.14.1",
+    "request": "^2.88.2",
+    "safe-buffer": "^5.2.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "token":   "NjkzNTEzMzA1MzQzMzkzODMy.Xn-KmA.5wZ1DD2OtAu4A86X2tMDr9oIRSI",
+    "prefix": "w!",
+    "server": "wyliegdps02.7m.pl/database",
+
+    "star": "<:GDstar:735563775209635972>",
+    "diamond": "<:diamond:694900098836070440>",
+    "goldCoin": "<:coin:694900098479554571>",
+    "silverCoin": "<:usercoin:694900098815230024>",
+    "demon": "<:demon:694900098794258482>",
+    "cp": "<:cp:694900098890596402>",
+    "mod": "<:mod:735560669096575036>",
+    "elderMod": "<:elder:735560669117677608>",
+    "leaderboardRank": "<:rank:755459364180983808>",
+
+    "download": "<:downloads:694900098982871080>",
+    "like": "<:like:694900098613903382>",
+    "dislike": "<:dislike:694900098890596362>",
+    "length": "<:length:735567666101878927>"
+    
+}
