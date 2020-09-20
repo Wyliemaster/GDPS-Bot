@@ -21,6 +21,17 @@ firstly, you need to configure the config which can be found [here](https://gith
 
 ![config](https://cdn.discordapp.com/attachments/707934709178695701/757328595285704774/unknown.png)
 
+# Emotes
+
+to get emotes working on the bot, you will need to add them yourself. upload the emotes you want to use then you use ``\emote`` to find the ID of your emote
+![how to find emote IDs](https://cdn.discordapp.com/attachments/707934709178695701/757331811675144292/unknown.png)
+
+next
+![emote config](https://cdn.discordapp.com/attachments/707934709178695701/757332054600843394/unknown.png)
+
+
+
+
 # getting the bot online
 
 The setup is quite easy. just upload this repository on your github account with the settings configured then you use [heroku to host the bot.](https://www.youtube.com/watch?v=8qIsRzV0Hpg)
