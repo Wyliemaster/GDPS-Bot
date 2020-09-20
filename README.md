@@ -24,12 +24,12 @@ firstly, you need to configure the config which can be found [here](https://gith
 # Emotes
 
 to get emotes working on the bot, you will need to add them yourself. upload the emotes you want to use then you use ``\emote`` to find the ID of your emote
+
 ![how to find emote IDs](https://cdn.discordapp.com/attachments/707934709178695701/757331811675144292/unknown.png)
 
-next
+once you get the emoteID of the emote you want to add, all you do is copy and paste it into the config and it will work once you use the bot
+
 ![emote config](https://cdn.discordapp.com/attachments/707934709178695701/757332054600843394/unknown.png)
-
-
 
 
 # getting the bot online
