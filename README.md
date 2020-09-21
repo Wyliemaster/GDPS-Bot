@@ -35,7 +35,9 @@ once you get the emoteID of the emote you want to add, all you do is copy and pa
 
 # Getting the bot online
 
-The setup is quite easy. just upload this repository on your github account with the settings configured then you use [heroku to host the bot.](https://www.youtube.com/watch?v=8qIsRzV0Hpg)
+The setup is quite easy. just upload this repository on your github account with the settings configured then you use [heroku to host the bot.](https://www.youtube.com/watch?v=8qIsRzV0Hpg). 
+
+No Need to worry about making the [Profile](https://github.com/Wyliemaster/GDPS-Bot/blob/master/Procfile), I made on in advance. all you need to do is host the repository on heroku and enable workers and then the bot should be functional
 
 # Need some support?
 
