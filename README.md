@@ -13,7 +13,7 @@ This GDPS Bot currently has 2 main commands
 
 ![level command example](https://cdn.discordapp.com/attachments/755460924000829460/757642612864843867/2.png)
 
-# setup
+# Setup
 firstly, you need to configure the config which can be found [here](https://github.com/Wyliemaster/GDPS-Bot/blob/master/botsettings.json). the image below shows the important parts of the config.
 
 - The bot token is what is used to make your bot work on discord. you can get the token for a bot [here](https://discord.com/developers/applications)
@@ -33,7 +33,7 @@ once you get the emoteID of the emote you want to add, all you do is copy and pa
 ![emote config](https://cdn.discordapp.com/attachments/707934709178695701/757332054600843394/unknown.png)
 
 
-# getting the bot online
+# Getting the bot online
 
 The setup is quite easy. just upload this repository on your github account with the settings configured then you use [heroku to host the bot.](https://www.youtube.com/watch?v=8qIsRzV0Hpg)
 
