@@ -9,8 +9,9 @@ This GDPS Bot currently has 2 main commands
   
   these commands fetch information from your GDPS and displays them in a discord embed as shown in the examples below
 
-![profile command example](https://cdn.discordapp.com/attachments/707934709178695701/757327658446225489/unknown.png)
-![level command example](https://cdn.discordapp.com/attachments/707934709178695701/757327745519845477/unknown.png)
+![profile command example](https://cdn.discordapp.com/attachments/755460924000829460/757642519264755732/1.png)
+
+![level command example](https://cdn.discordapp.com/attachments/755460924000829460/757642612864843867/2.png)
 
 # setup
 firstly, you need to configure the config which can be found [here](https://github.com/Wyliemaster/GDPS-Bot/blob/master/botsettings.json). the image below shows the important parts of the config.
