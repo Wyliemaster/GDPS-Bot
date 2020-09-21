@@ -20,12 +20,14 @@ form: {
 
 },function callback(err, httpResponse, body) {
    if(body === '-1'){
+    console.log('[LOG] ERROR: Profile can not be found - ' + body)
     return message.channel.send('The Profile you are searching for can not be found').then(() => {
         bot.destroy();
         bot.login(botconfig.token);
         }); 
 }
 if((user.split(' ')[1]).length < 3){
+    console.log('[LOG] ERROR: message too short - -2') 
     return message.channel.send('The Profile you are searching for can not be found').then(() => {
         bot.destroy();
         bot.login(botconfig.token);
@@ -139,8 +141,6 @@ if(data['twitter'] == ''){
             .setFooter('AccountID: ' + data['accountID'] + '  |  ' + 'UserID: ' + data['playerID'])
             .setColor(0x37D0DA)
             message.channel.send(playerSearch)
-
-console.log(data)
                 })
             })  
 }

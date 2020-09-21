@@ -31,6 +31,7 @@ module.exports.run = async (bot, message, args) => {
         }, function callback(err, httpResponse, body) {
 
             if(body === '###0:00:10#-1'){
+                console.log('[LOG] ERROR: Level does not exist - ' + body)
                 return message.channel.send('The Level you are searching for can not be found').then(() => {
                     bot.destroy();
                     bot.login(botconfig.token);
@@ -44,7 +45,7 @@ module.exports.run = async (bot, message, args) => {
                 for (let i = 0; i < response.length; i += 2) {
                 res[response[i]] = response[i + 1]}
                 return res  }
-                var levelData = parseResponse(body) //todo: parse songs
+                var levelData = parseResponse(body)
 
 
                 let data = {
@@ -74,7 +75,6 @@ module.exports.run = async (bot, message, args) => {
                     demondiff: levelData[43],
                     objects: levelData[45],
                 }
-console.log(data)
                 switch(levelData[12]){
                     case '0':
                         ng = '[Stereo Madness](https://www.youtube.com/watch?v=JhKyKEDxo8Q)'
@@ -140,13 +140,13 @@ console.log(data)
                         ng = '[Fingerdash](https://www.youtube.com/watch?v=BuPmq7yjDnI)'
                         break;
                         default:
+                            console.log('[LOG] ERROR: song does not exist - Server Response: ' + levelData[12])
                         ng = '[Unknown](https://www.youtube.com/watch?v=oHg5SJYRHA0)'
                         break;                
                 }
 
 songTrim = body.split('#')[2] //Credits to Colon and a few members from GDP for explaining what i need to do for this
 song = parseResponse(songTrim, '~|~')
-console.log(song)
 
 let songData = {
     songID: song[1],
@@ -158,7 +158,6 @@ let songData = {
 }
 if(song[1] > 0){
 finalURL = decodeURIComponent(song[10]) //i was stupid, thanks colon for telling me i used the wrong one
-console.log(finalURL)
 ng = '[**' + song[2] + '**](https://www.newgrounds.com/audio/listen/' + song[1] + ') by [**' + song[4] + '**](https://' + song[4] + '.newgrounds.com/audio)'
 download = '[Download Song](' + finalURL + ')'
 }
@@ -227,7 +226,6 @@ request.post('http://' + botconfig.server + '/downloadGJLevel22.php', {
                 }); 
             }
             newLevelData = parseResponse(body)
-            console.log(body)
             let data = {
                 password: newLevelData[27]
             }
