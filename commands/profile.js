@@ -113,7 +113,7 @@ var mod
             }
 
 if(data['youTube'] == ''){
-    youtube = 'No Youtube Channel'
+    youtube = 'None'
 } else if(data['youTube'].length < 15){
     youtube = '[YouTube](https://www.youtube.com/c/' + data['youTube'] + ')'
 }else{ 
@@ -121,13 +121,13 @@ if(data['youTube'] == ''){
 }
 
 if(data['twitch'] == ''){
-    twitch = 'No Twitch account found'
+    twitch = 'None'
 }
 else {
     twitch = '[' + data['twitch'] + '](https://twitch.tv/' + data['twitch'] + ')'
 }
 if(data['twitter'] == ''){
-    twitter = 'No Twitter Account Found'
+    twitter = 'None'
 } else {
     twitter = '[@' + data['twitter'] + '](https://twitter.com/' + data['twitter'] + ')'
 }
