@@ -1,5 +1,5 @@
 # GDPS-Bot
-a GDPS bot that ive been working on, i thought id make it public
+a GDPS bot that ive been working on, planning to implement more features in the near future
 
 # What does this GDPS Bot do?
 This GDPS Bot currently has 2 main commands
