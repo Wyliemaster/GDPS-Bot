@@ -40,7 +40,7 @@ module.exports.run = async (bot, message, args) => {
 
             parseResponse = function (responseBody, splitter) {
                 if (!responseBody || responseBody == "-1") return {};
-                let response = responseBody.split('#')[0].split(splitter || ':'); //special thanks to colon for letting me use this
+                let response = responseBody.split('#')[0].split('|')[0].split(splitter || ':'); //special thanks to colon for letting me use this
                 let res = {};
                 for (let i = 0; i < response.length; i += 2) {
                 res[response[i]] = response[i + 1]}
@@ -144,10 +144,17 @@ module.exports.run = async (bot, message, args) => {
                         ng = '[Unknown](https://www.youtube.com/watch?v=oHg5SJYRHA0)'
                         break;                
                 }
+        
+songParse = function (responseBody, splitter) {
+if (!responseBody || responseBody == "-1") return {};
+let response = responseBody.split('#')[0].split(splitter || ':'); //stupid bug :(
+let res = {};
+for (let i = 0; i < response.length; i += 2) {
+res[response[i]] = response[i + 1]}
+return res  }
 
 songTrim = body.split('#')[2] //Credits to Colon and a few members from GDP for explaining what i need to do for this
-song = parseResponse(songTrim, '~|~')
-
+song = songParse(songTrim, '~|~')
 let songData = {
     songID: song[1],
     songName: song[2],
@@ -156,6 +163,7 @@ let songData = {
     songSize: song[5],
     songURL: song[10]
 }
+var download = ''
 if(song[1] > 0){
 finalURL = decodeURIComponent(song[10]) //i was stupid, thanks colon for telling me i used the wrong one
 ng = '[**' + song[2] + '**](https://www.newgrounds.com/audio/listen/' + song[1] + ') by [**' + song[4] + '**](https://' + song[4] + '.newgrounds.com/audio)'
