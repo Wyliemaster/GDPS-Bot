@@ -1,7 +1,9 @@
 {
-    "token":   "",
+    "token":   "Token",
     "prefix": "w!",
     "server": "wyliegdps02.7m.pl/database",
+    "customStatus": "GDPS Bot",
+    "commandColour": "37D0DA",
 
     "star": "<:GDstar:735563775209635972>",
     "diamond": "<:diamond:694900098836070440>",

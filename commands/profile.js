@@ -140,7 +140,7 @@ if(data['twitter'] == ''){
             .addField('__Stats__', botconfig.star + ' ' + data['stars'] + '\n' + botconfig.diamond + ' ' + data['diamonds'] + '\n' + botconfig.goldCoin + ' ' + data['coins'] + '\n' + botconfig.silverCoin + ' ' + data['userCoins'] + '\n' + botconfig.demon + ' ' + data['demons'] + '\n' + botconfig.cp + ' ' + data['cp'])
             .addField('__Links__', 'YouTube: ' + youtube + '\nTwitter: ' + twitter + '\nTwitch: ' + twitch)
             .setFooter('AccountID: ' + data['accountID'] + '  |  ' + 'UserID: ' + data['playerID'])
-            .setColor(0x37D0DA)
+            .setColor('0x' + botconfig.commandColour)
             message.channel.send(playerSearch)
                 })
             })  
