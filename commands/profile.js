@@ -26,7 +26,8 @@ form: {
         bot.login(botconfig.token);
         }); 
 }
-if((user.split(' ')[1]).length < 3){
+prefixLength = botconfig.prefix.length
+if(message.content.length < 8 + prefixLength){
     console.log('[LOG] ERROR: message too short - -2') 
     return message.channel.send('The Profile you are searching for can not be found').then(() => {
         bot.destroy();
