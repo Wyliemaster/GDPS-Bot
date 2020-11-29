@@ -26,6 +26,7 @@ form: {
         bot.login(botconfig.token);
         }); 
 }
+
 prefixLength = botconfig.prefix.length
 if(message.content.length < 8 + prefixLength){
     console.log('[LOG] ERROR: message too short - -2') 

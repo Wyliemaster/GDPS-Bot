@@ -184,7 +184,7 @@ switch(levelData[37]){ //Silver Coins
         coins = 'No Coins'
         break;
 }
-switch(levelData[15]){
+switch(levelData[15]){ // Length
     case '0':
         length = 'tiny'
         break;
@@ -202,7 +202,155 @@ switch(levelData[15]){
         break;
     default:
         length = 'Unknown'
+}
+switch(levelData[9]){ // difficulty faces
+case '0':
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781979485729194004/NA.png'
+    break;
+case '10':
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781979805351804938/Easy.png'
+break;
+case '20':
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781982183648395264/Normal.png'
+    break;
+case '30':
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781982140866625596/Hard.png'
+    break;
+case '40':
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781982184834727986/Harder.png'
+    break;
+case '50':
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781982178488877056/Insane.png'
+    break
+default:
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781979485729194004/NA.png';
+    break;
+}
+if(levelData[25] == 1){
+    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781979850093232168/auto.png'
+}
+else if(levelData[17] == 1){
+    switch(levelData[43]){
+        case '3':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781981543044218911/easyDemon.png' //easy demon
+            break;
+        case '4':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781981789744922624/mediumDemon.png' //medium demon
+            break;
+        case '5':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781981807209087017/insaneDemon.png' // insane demon
+            break;
+        case '6':
+            difficulty = 'https://media.discordapp.net/attachments/695600063652560976/781982171724382230/Extreme_Demon.png' // extreme demon
+            break;
+        default:
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/781981292643352606/hardDemon.png' // hard demon
+            break;
     }
+}
+
+if(levelData[19] > 0){ // is level Featured?
+    switch(levelData[9]){
+        case '0':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782663025697357824/naFeature.png'
+            break;
+        case '10':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665587737493534/easyFeature.png'
+        break;
+        case '20':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665716410220594/normalFeature.png'
+            break;
+        case '30':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665592582701066/hardFeature.png'
+            break;
+        case '40':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665591164764180/harderFeature.png'
+            break;
+        case '50':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665595753332736/insaneFeature.png'
+            break
+        default:
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782663025697357824/naFeature.png';
+            break;
+        }
+        if(levelData[25] == 1){
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665584315072523/autoFeature.png'
+        }
+        else if(levelData[17] == 1){
+            switch(levelData[43]){
+                case '3':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665589306294292/eDemonFeature.png' //easy demon
+                    break;
+                case '4':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665715059916840/mDemonFeature.png' //medium demon
+                    break;
+                case '5':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665594708951070/iDemonFeature.png' // insane demon
+                    break;
+                case '6':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665588983464006/exDemonFeature.png' // extreme demon
+                    break;
+                default:
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782665585246994442/DemonFeature.png' // hard demon
+                    break;
+            }
+        }
+
+
+}
+
+if(levelData[42] > 0){ // is level epic?
+    switch(levelData[9]){
+        case '0':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668848967974932/naEpic.png'
+            break;
+        case '10':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668780522176572/easyEpic.png'
+        break;
+        case '20':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668850675056640/normalEpic.png'
+            break;
+        case '30':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668789367963658/hardEpic.png'
+            break;
+        case '40':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668791648616508/harderEpic.png'
+            break;
+        case '50':
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668796036775966/insaneEpic.png'
+            break
+        default:
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668848967974932/naEpic.png';
+            break;
+        }
+        if(levelData[25] == 1){
+            difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668777153626112/autoEpic.png'
+        }
+        else if(levelData[17] == 1){
+            switch(levelData[43]){
+                case '3':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668782924464148/eDemonEpic.png' //easy demon
+                    break;
+                case '4':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668846892056576/mDemonEpic.png' //medium demon
+                    break;
+                case '5':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668793981173760/iDemonEpic.png' // insane demon
+                    break;
+                case '6':
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668785101307924/exDemonEpic.png' // extreme demon
+                    break;
+                default:
+                    difficulty = 'https://media.discordapp.net/attachments/753349180885565481/782668778655449128/demonEpic.png' // hard demon
+                    break;
+            }
+        }
+
+
+}
+
+
+
 
     let desc = levelData[3];
     let buff = new Buffer.from(desc, 'base64');
@@ -213,7 +361,7 @@ switch(levelData[15]){
 
 var varsong =  ng + '\n' + download
 if(song[4] == 'Reupload'){
-    varsong = '[**' + song[2] + '**](' + finalURL + ') by [**' + song[4] + '**](https://' + song[4] + '.newgrounds.com/audio)'
+    varsong = '[**' + song[2] + '**](' + finalURL + ') by [**' + song[4] + '**](https://' + song[4] + '.newgrounds.com/audio)' // messy :()
 }
 
 
@@ -252,6 +400,7 @@ if(lvlPass.length > 1)
     lvlPass = '||' + lvlPass + '||'
                 const LevelSearch = new Discord.MessageEmbed()
                 .setTitle('__' + levelData[2] + '__')
+                .setThumbnail(difficulty)
                 .addField('__Level Description__', description)
                 .addField('__Level Stats__', botconfig.star + ' ' +  levelData[18] + '\n' + botconfig.download + ' ' + levelData[10] + '\n' + botconfig.like + ' ' + levelData[14] + '\n' + botconfig.length + ' ' + length)
                 .addField('__Coins__', coins)
@@ -271,5 +420,5 @@ module.exports.config = {
     description: "Fetches the data for the levels you search",
     usage: botconfig.prefix + "level",
     accessableby: "Members",
-    aliases: []
+    aliases: ['l']
 }
