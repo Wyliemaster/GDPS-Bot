@@ -1,13 +1,10 @@
 {
-    "token":   "token",
+    "token": "Token",
     "prefix": "w!",
     "server": "wyliegdps02.7m.pl/database",
     "customStatus": "WGDPS",
     "commandColour": "37D0DA",
-
-
     "__Emote Comment__": "These are all the emotes for the bot, you need to set them up yourself if you want the bot to look nice",
-
     "star": "<:GDstar:735563775209635972>",
     "diamond": "<:diamond:694900098836070440>",
     "goldCoin": "<:coin:694900098479554571>",
@@ -17,20 +14,12 @@
     "mod": "<:mod:735560669096575036>",
     "elderMod": "<:elder:735560669117677608>",
     "leaderboardRank": "<:rank:755459364180983808>",
-
     "download": "<:downloads:694900098982871080>",
     "like": "<:like:694900098613903382>",
     "dislike": "<:dislike:694900098890596362>",
     "length": "<:length:735567666101878927>",
-    
-
     "__Leaderboard Comment__": "These are for the Leaderboard command, the command wont work unless you are logged in. you can find the AccountID using the profile command",
-
     "leaderboardOn": "1 = Leaderboard on, 0 = Leaderboard off",
     "BotAccountID": "The Bot's accountID",
     "BotPassword": "The password for the bot"
-
-
-
-
 }
