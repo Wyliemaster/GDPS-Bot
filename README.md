@@ -1,3 +1,7 @@
+# IMPORTANT
+
+bot may currently not work, there has been a chance in its dependencies and it now crashes on startup
+
 # GDPS-Bot
 a GDPS bot that ive been working on, planning to implement more features in the near future
 
