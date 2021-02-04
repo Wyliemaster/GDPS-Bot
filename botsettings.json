@@ -1,8 +1,8 @@
 {
-    "token": "Token",
-    "prefix": "w!",
-    "server": "wyliegdps02.7m.pl/database",
-    "customStatus": "WGDPS",
+    "token": "ODA2NTQwMjg1NzY4MzY4MjEw.YBq7LA.ofkmFju4Q3CbzWcRoAwjRvS0v-A",
+    "prefix": "gd!",
+    "server": "manster9241.7m.pl/database",
+    "customStatus": "U_SUCK",
     "commandColour": "37D0DA",
     "__Emote Comment__": "These are all the emotes for the bot, you need to set them up yourself if you want the bot to look nice",
     "star": "<:GDstar:735563775209635972>",
